@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(#0725b7, #6381f3);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.letter {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  width: 300px;
+  height: 200px;
+  z-index: -10;
+  background: white;
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+}
+.letter .arrow-down-closed {
+  width: 300px;
+  height: 125px;
+  position: absolute;
+  z-index: 5;
+  transition: 0.5s;
+}
+.letter .arrow-up-open {
+  width: 300px;
+  height: 125px;
+  position: absolute;
+  z-index: 9;
+  margin-top: -125px;
+  transition: 0.5s 0.5s;
+  visibility: hidden;
+}
+.letter .arrow-down {
+  width: 0;
+  height: 0;
+  border-right: 150px solid transparent;
+  border-top: 100px solid #f0f0f0;
+  border-left: 150px solid transparent;
+  position: absolute;
+  z-index: 1;
+}
+.letter .arrow-up {
+  width: 0;
+  height: 0;
+  border-right: 150px solid transparent;
+  border-bottom: 110px solid #fafafa;
+  border-left: 150px solid transparent;
+  position: absolute;
+  bottom: 0;
+  z-index: 4;
+}
+.letter .arrow-left {
+  width: 0;
+  height: 0;
+  border-right: 150px solid whitesmoke;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+.letter .arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 150px solid whitesmoke;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+}
+
+.message-box-1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  padding: 20px 40px;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  background-image: repeating-linear-gradient(
+      to bottom,
+      white,
+      white 26px,
+      #add8e6 27px
+    ),
+    linear-gradient(to right, red 2px, transparent 2px);
+  background-size: 100% 28px, 100% 100%;
+  background-position: 40px 0, 40px 0;
+  background-repeat: repeat-y, no-repeat;
+  box-sizing: border-box;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.message-box-1::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: grey;
+  box-shadow: 0 30px grey, 0 60px grey, 0 90px grey, 0 120px grey, 0 150px grey,
+    0 180px grey, 0 210px grey, 0 240px grey, 0 270px grey, 0 300px grey;
+}
+
+.message-box-1 {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.message-box-greeting {
+  font-family: "Dancing Script", cursive;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.media-btn {
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  bottom: 25px;
+  visibility: hidden;
+  color: white;
+}
+
+#greeting-text {
+  white-space: pre-wrap;
+}
