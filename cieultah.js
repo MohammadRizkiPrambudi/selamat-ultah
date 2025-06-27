@@ -24,7 +24,7 @@ function openLetter() {
 
     const message =
       "Hai, Nindia Rachel Dwi Putri. \n" +
-      "Hari ini, saya langitkan semua doa terbaik saya untukmu.\n" +
+      "Hari ini, saya langitkan semua doa terbaik-ku untukmu.\n" +
       "Semoga hal-hal yang membuatmu jatuh turut menjadi alasanmu untuk tetap tumbuh lebih kuat.\n" +
       "Semoga dunia senantiasa menjagamu di mana pun kamu berada, dan melindungi setiap langkahmu.\n" +
       "Semoga setiap langkahmu dimudahkan, hingga tercapai semua mimpi dan harapanmu.\n" +
