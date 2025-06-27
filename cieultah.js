@@ -23,12 +23,13 @@ function openLetter() {
     messageBox.style.visibility = "visible";
 
     const message =
-      "Hari ini, saya langitkan semua doa terbaik saya untuk kamu.\n" +
-      "Semoga hal-hal yang membuat kamu runtuh turut menjadi alasan kamu untuk tetap tumbuh lebih kuat.\n" +
-      "Semoga dunia senantiasa menjaga kamu di mana pun kamu berada, dan melindungi setiap langkahmu.\n" +
-      "Semoga hari-hari kamu selalu diiringi cinta yang tak pernah ada batasnya.\n" +
+      "Hai, Nindia Rachel Dwi Putri. \n" +
+      "Hari ini, saya langitkan semua doa terbaik saya untukmu.\n" +
+      "Semoga hal-hal yang membuatmu jatuh turut menjadi alasanmu untuk tetap tumbuh lebih kuat.\n" +
+      "Semoga dunia senantiasa menjagamu di mana pun kamu berada, dan melindungi setiap langkahmu.\n" +
+      "Semoga hari-harimu selalu diiringi cinta yang tak pernah ada batasnya.\n" +
       "Semoga setiap langkahmu dimudahkan, hingga tercapai semua mimpi dan harapanmu.\n" +
-      "Dirayakan ataupun tidak, semoga semesta selalu membahagiakan kamu bagaimanapun caranya.\n" +
+      "Dirayakan ataupun tidak, semoga semesta selalu membahagiakanmu bagaimanapun caranya.\n" +
       "Barakallah fi umrik, terima kasih sudah bertahan sampai sejauh ini.\n" +
       "Wish you all the best, semoga senyum selalu menyertai setiap harimu.";
 
