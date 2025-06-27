@@ -34,7 +34,7 @@ function openLetter() {
 
     const greetingEl = document.getElementById("greeting-text");
     greetingEl.innerHTML = "";
-    typeWriter(greetingEl, message, 50);
+    typeWriter(greetingEl, message, 100);
   }, 2000); // << Jeda 2000ms = 2 detik
 }
 
